@@ -17,7 +17,7 @@ class UsersController < ApplicationController
 
   # あるユーザーをフォローしている人全員を取得するアクション
   def followers
-    user = User.find(params[:id])
+    user = User.find(params[:user_id])
     @users = user.followers
   end
 end
